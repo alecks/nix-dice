@@ -58,6 +58,7 @@ mkdir -p -m 0755 ~/.nix || hardfail "Couldn't to create ~/.nix directory"
 
 echo "START OF NIX INSTALL SCRIPT"
 ~/.local/bin/nix-user-chroot ~/.nix bash -c "curl -L https://nixos.org/nix/install | bash" || fail "Nix install script failed."
+echo "END OF NIX INSTALL SCRIPT"
 
 cat <<EOF
 
